@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories & Featured Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <a href="#" class="text-2xl font-extrabold text-indigo-600">ShopEase</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-indigo-600">Home</a>
+                <a href="categories.html" class="text-gray-600 hover:text-indigo-600">Categories</a>
+                <a href="profile.html" class="text-gray-600 hover:text-indigo-600">Profile</a>
+            </div>
+            <div class="flex space-x-4">
+                <div class="relative text-2xl right-3 text-gray-600 hover:text-indigo-600">
+                    <a href="cart.html">🛒</a>
+                    <span href="cart.html" class="absolute bottom-7 left-2 bg-red-500 text-white text-xs px-2 py-0.5 rounded-full">3</span>
+                </div>
+                <a href="login.html"><button class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Log In</button></a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Categories Section -->
+    <div class="container mx-auto mt-24 p-6">
+        <h1 class="text-3xl font-bold mb-6">Browse Categories</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                <h2 class="text-xl font-semibold">Gaming</h2>
+                <p class="text-gray-600">Explore the latest gaming gear and accessories.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                <h2 class="text-xl font-semibold">Laptops</h2>
+                <p class="text-gray-600">Find high-performance laptops for work and play.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                <h2 class="text-xl font-semibold">Accessories</h2>
+                <p class="text-gray-600">Keyboards, mice, headsets, and more.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products Section -->
+    <section class="container mx-auto mt-16 p-6" id="shop">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Trending Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all text-gray-800">
+                <img src="img/1_1.jpg" alt="Product" class="w-full rounded-lg">
+                <h3 class="mt-4 text-lg font-semibold">Logitech G502</h3>
+                <p class="text-gray-600 text-sm">High-performance gaming mouse.</p>
+                <p class="text-xl font-bold mt-2 text-indigo-600">$129.99</p>
+                <a href="product.html"><button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition w-full">Add to Cart</button></a>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all text-gray-800">
+                <img src="img/1_1.jpg" alt="Product" class="w-full rounded-lg">
+                <h3 class="mt-4 text-lg font-semibold">Razer BlackWidow</h3>
+                <p class="text-gray-600 text-sm">Mechanical gaming keyboard.</p>
+                <p class="text-xl font-bold mt-2 text-indigo-600">$99.99</p>
+                <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition w-full">Add to Cart</button>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all text-gray-800">
+                <img src="img/1_1.jpg" alt="Product" class="w-full rounded-lg">
+                <h3 class="mt-4 text-lg font-semibold">SteelSeries Arctis 7</h3>
+                <p class="text-gray-600 text-sm">Wireless gaming headset.</p>
+                <p class="text-xl font-bold mt-2 text-indigo-600">$149.99</p>
+                <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition w-full">Add to Cart</button>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all text-gray-800">
+                <img src="img/1_1.jpg" alt="Product" class="w-full rounded-lg">
+                <h3 class="mt-4 text-lg font-semibold">ASUS ROG Strix</h3>
+                <p class="text-gray-600 text-sm">Gaming laptop with RTX 3070.</p>
+                <p class="text-xl font-bold mt-2 text-indigo-600">$1,499.99</p>
+                <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition w-full">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
